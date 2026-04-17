@@ -21,10 +21,12 @@
 
 			<div class="form-group">
 				<i class="icono izquierda fa fa-lock"></i><input class="password" type="password" name="password" placeholder="Contraseña">
+				<i class="toggle-password fa fa-eye" data-target="password"></i>
 			</div>
 
 			<div class="form-group">
 				<i class="icono izquierda fa fa-lock"></i><input class="password_btn" type="password" name="password2" placeholder="Repite la contraseña">
+				<i class="toggle-password fa fa-eye" data-target="password2"></i>
 				<i class="submit-btn fa fa-arrow-right" onclick="login.submit()"></i>
 			</div>
 
@@ -43,5 +45,6 @@
 		</p>
 
 	</div>
+	<script src="registro.js"></script>
 </body>
 </html>

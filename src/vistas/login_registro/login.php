@@ -1,9 +1,11 @@
 <?php session_start();
 
 if (isset($_SESSION['usuario'])) {
-	header('Location: index.php');
+	header('Location: ../inicio/inicio.php');
 	die();
 }
+
+$errores = '';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$usuario = filter_var(strtolower($_POST['usuario']), FILTER_SANITIZE_STRING);
@@ -25,12 +27,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$resultado = $statement->fetch();
 	if ($resultado !== false) {
 		$_SESSION['usuario'] = $usuario;
-		header('Location: index.php');
+		header('Location: ../inicio/inicio.php');
 	} else {
 		$errores = '<li>Datos incorrectos</li>';
 	}
 }
 
-require 'views/login.view.php';
-
+require 'login_vista.php';
 ?>

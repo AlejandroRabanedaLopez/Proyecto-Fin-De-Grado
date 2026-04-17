@@ -21,6 +21,7 @@
 
 			<div class="form-group">
 				<i class="icono izquierda fa fa-lock"></i><input class="password_btn" type="password" name="password" placeholder="Password">
+				<i class="toggle-password fa fa-eye"></i>
 				<i class="submit-btn fa fa-arrow-right" onclick="login.submit()"></i>
 			</div>
 
@@ -39,5 +40,6 @@
 		</p>
 
 	</div>
+	<script src="login.js"></script>
 </body>
 </html>

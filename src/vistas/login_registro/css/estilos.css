@@ -97,7 +97,12 @@ a:hover {
 }
 
 .formulario .password_btn {
-	width: calc(100% - 105px);
+	width: calc(100% - 157px);
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
 }
 
 .formulario .error ul {
@@ -126,6 +131,25 @@ a:hover {
 	-ms-border-radius: 0 3px 3px 0;
 	-o-border-radius: 0 3px 3px 0;
 	border-radius: 0 3px 3px 0;
+}
+
+.formulario .toggle-password {
+	padding: 15px;
+	text-align: center;
+	width: 48px;
+	max-height: 48px;
+	font-size: 18px;
+	line-height: 18px;
+	background: #a0a0a0;
+	display: inline-block;
+	color:#fff;
+	cursor: pointer;
+	vertical-align: top;
+	transition: background-color 0.3s ease;
+}
+
+.formulario .toggle-password:hover {
+	background: #888888;
 }
 
 .texto-registrate {
