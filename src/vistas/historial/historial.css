@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background: #1B1D35;
+    color: #fff;
+}
+
+.historial-contenedor {
+    max-width: 980px;
+    margin: 48px auto;
+    padding: 40px;
+    background: #2C2C47;
+    border-top: 4px solid #B8711B;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.25);
+}
+
+.historial-contenedor h1 {
+    margin-bottom: 28px;
+    font-size: 32px;
+    text-align: center;
+    color: #B8711B;
+}
+
+.historial-error,
+.historial-empty {
+    padding: 18px 22px;
+    border-radius: 12px;
+    background: rgba(255, 230, 230, 0.15);
+    color: #fff;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.historial-grid {
+    display: grid;
+    gap: 22px;
+}
+
+.historial-card {
+    background: #343655;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 22px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.card-label {
+    display: block;
+    color: #ccc;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.card-date {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.card-subtitle {
+    margin-bottom: 18px;
+    color: #d8d8d8;
+    font-size: 15px;
+}
+
+.replay-toggle {
+    border: none;
+    background: #B8711B;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background 0.2s ease;
+}
+
+.replay-toggle:hover {
+    background: #a15a12;
+}
+
+.video-box {
+    border-radius: 16px;
+    background: #1B1D35;
+    overflow: hidden;
+    padding: 12px;
+}
+
+.video-box video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    background: #000;
+}
+
+.video-sin-archivo {
+    padding: 28px;
+    text-align: center;
+    color: #ddd;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px dashed rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+}
+
+@media (min-width: 768px) {
+    .historial-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .historial-contenedor {
+        padding: 24px;
+    }
+
+    .replay-toggle {
+        width: 100%;
+    }
+}
